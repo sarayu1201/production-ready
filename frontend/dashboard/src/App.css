@@ -1,0 +1,75 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-create-payment {
+  background-color: white;
+  color: #667eea;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-create-payment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 15px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .app-header h1 {
+    font-size: 20px;
+  }
+
+  .app-main {
+    padding: 20px;
+  }
+}
